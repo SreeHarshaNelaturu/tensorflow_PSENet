@@ -1,5 +1,5 @@
 opencv-python==4.1.0.25
 runway-python==0.5.4
-tensorflow==1.14.0
+tensorflow-gpu==1.14.0
 
 
