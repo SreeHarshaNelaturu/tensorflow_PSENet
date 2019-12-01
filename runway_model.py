@@ -144,7 +144,7 @@ def localize_text(model, inputs):
                 box = boxes[i]
                 if np.linalg.norm(box[0] - box[1]) < 5 or np.linalg.norm(box[3]-box[0]) < 5:
                     continue
-               PSENet
+               
                 num += 1
         final_list = []
 
