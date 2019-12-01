@@ -1,6 +1,6 @@
 import logging
 from easydict import EasyDict as edict
-import Queue
+import queue as Queue
 import numpy as np
 import cv2
 
