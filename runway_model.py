@@ -159,7 +159,7 @@ def localize_text(model, inputs):
                 bbox = [x1, y1, x2, y2]
                 final_list.append(bbox)
             
-        print(final_list) 
+         
         return {"bboxes" : final_list}
 
 if __name__ == "__main__":
