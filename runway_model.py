@@ -160,7 +160,7 @@ def localize_text(model, inputs):
                 final_list.append(bbox)
             
         print(final_list) 
-        return {"bboxes" : final_list
+        return {"bboxes" : final_list}
 
 if __name__ == "__main__":
     runway.run(model_options={"checkpoint" : "./model"})
