@@ -122,7 +122,7 @@ def localize_text(model, inputs):
         with g.as_default():
             seg_maps = model["sess"].run(model["seg_maps_pred"], feed_dict={model["in_ph"]: [im_resized]})
         timer['net'] = time.time() - start
-        
+        #print
 
         boxes, kernels, timer = detect(seg_maps=seg_maps, timer=timer, image_w=w, image_h=h)
         
