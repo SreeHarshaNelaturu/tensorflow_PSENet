@@ -122,7 +122,7 @@ def localize_text(model, inputs):
         with g.as_default():
             seg_maps = model["sess"].run(model["seg_maps_pred"], feed_dict={model["in_ph"]: [im_resized]})
         timer['net'] = time.time() - start
-        
+        #print
 
         boxes, kernels, timer = detect(seg_maps=seg_maps, timer=timer, image_w=w, image_h=h)
         
@@ -144,7 +144,7 @@ def localize_text(model, inputs):
                 box = boxes[i]
                 if np.linalg.norm(box[0] - box[1]) < 5 or np.linalg.norm(box[3]-box[0]) < 5:
                     continue
-               PSENet
+               
                 num += 1
         final_list = []
 
@@ -159,8 +159,8 @@ def localize_text(model, inputs):
                 bbox = [x1, y1, x2, y2]
                 final_list.append(bbox)
             
-        print(final_list) 
-        return {"bboxes" : final_list
+         
+        return {"bboxes" : final_list}
 
 if __name__ == "__main__":
     runway.run(model_options={"checkpoint" : "./model"})
