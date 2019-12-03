@@ -1,5 +1,5 @@
-CXXFLAGS = -I include  -std=c++11 -O3 $(shell python-config --cflags)
-LDFLAGS = $(shell python-config --ldflags)
+CXXFLAGS = -I include  -std=c++11 -O3 $(shell python3-config --cflags)
+LDFLAGS = $(shell python3-config --ldflags)
 
 DEPS = $(shell find include -xtype f)
 CXX_SOURCES = pse.cpp

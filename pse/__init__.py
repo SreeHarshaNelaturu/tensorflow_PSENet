@@ -3,11 +3,12 @@ import os
 import numpy as np
 import cv2
 
+"""
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 if subprocess.call(['make', '-C', BASE_DIR]) != 0:  # return value
     raise RuntimeError('Cannot compile pse: {}'.format(BASE_DIR))
-
+"""
 def pse(kernals, min_area=5):
     '''
     :param kernals:
